@@ -1,3 +1,4 @@
+/* regole generali */
 *{
     margin: 0;
     padding: 0;
@@ -8,23 +9,60 @@ ul{
 }
 body{
     background-color: #151921;
-    padding-top: 100px;
 }
 p{
     color: white;
 }
-header{
+
+main{
+    height: calc(100vh - 100px);
+    overflow: scroll;
+    display: flex;
+}
+/* INIZIO REGOLE LATO SINISTRO */
+section.side-bar-left{
+    width: 15%;
+    background-color: black;
+    height: 100%;
+    align-items: stretch;
+}
+.nav-left{
+    display: flex;
+}
+.nav-top-right-link{
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* INIZIO REGOLE LATO DESTRO */
+section.side-bar-right{
+    padding-top: 100px;
+    width: 85%;
+    align-items: stretch;
+}
+section.side-bar-right > .pop-up{
+     align-self:flex-end;
 }
 .pop-up{
-      width: 100%;
       height: 100px;
       background-color: #080b12;
       opacity: 0.8;
       position: fixed;
       top: 0px;
-      left: 0px;
+      right: 0;
+      left: 15%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -44,24 +82,53 @@ header{
     padding: 10px 15px;
 }
 
-.centre{
+.nav-centre{
     display:flex;
     justify-content:center;
 }
-.centre-link{
+.nav-centre-link{
     display: flex;
     padding: 50px;
 }
-.centre-link>li{
+.nav-centre-link>li{
     margin-left: 20px;
 }
-.centre-link>li>a{
+.nav-centre-link>li>a{
     text-decoration: none;
     color:#7e7f84;
 }
-main{
-    min-height: calc(100vh - 200px)
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
