@@ -2,30 +2,6 @@
 
 /* ______FORMATO DEL MOBILE_____ */
             /* HEADER */
-
-        .ham{
-            display: block;
-        }
-        .dropdown{
-            display:none;
-        }
-        .ham:hover .dropdown{
-            display: block;
-            position: absolute;
-            left: 0;
-            top:150px;
-            width: 100%;
-            border: solid 1px #000;
-            z-index: 2;
-            background-color: black;
-
-        }
-
-        .link-menu-header>li>a, .link-menu-header-right>li>a{
-            display: none;
-        }
-
-
 }
 
 
@@ -34,47 +10,20 @@
 /* ______FORMATO DEL TABLET_____ */
             /* HEADER */
 
-        .ham{
-            display:block;
-        }
-        .dropdown{
-            display:none;
-        }
-        .ham:hover .dropdown{
-            display: block;
-            position: absolute;
-            left: 0;
-            top:150px;
-            width: 100%;
-            border: solid 1px #000;
-
-
-        }
-
-        .link-menu-header>li>a, .link-menu-header-right>li>a{
-            display: none;
-        }
 }
+
+
+
+
+
+
 
 @media all and (max-width:767px){
 
 /* ______FORMATO DEL MOBILE_____ */
             /* section JUMBOTRON */
-            .flex-blue{
-                flex-direction: column;
-                align-items: center;
-            }
-            .title-blue{
-                width: 100%;
-            }
-            .deploy-started-blue{
-                width: 100%;
-            }
+
 }
-
-
-
-
 
 @media all and (min-width:768px) and (max-width:991px){
 
