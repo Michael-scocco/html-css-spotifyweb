@@ -16,19 +16,29 @@ p{
 
 main{
     height: calc(100vh - 100px);
-    overflow: scroll;
     display: flex;
+}
+/* sto scrollando solo il mio contenuto */
+section.scroll{
+    overflow: scroll;
 }
 /* INIZIO REGOLE LATO SINISTRO */
 section.side-bar-left{
     width: 15%;
     background-color: black;
     height: 100%;
-    align-items: stretch;
 }
-.nav-left{
-    display: flex;
+/* regole logo */
+.nav-logo-top-right{
+    width: 100%;
+    height: auto;
 }
+.nav-logo-top-right>img{
+    width: 50%;
+    height: auto;
+    margin: 30px;
+}
+/* regole della home */
 .nav-top-right{
     flex-direction: column;
     justify-content: flex-start;
@@ -37,9 +47,27 @@ section.side-bar-left{
     display: inline-block;
 }
 
+/* regole titolo */
+.nav-bottom-right>h3{
+    color: white;
+}
 
-
-
+/* regole degli li */
+.nav-bottom-right>li,
+.nav-top-right>li{
+    margin: 20px 0;
+}
+.nav-bottom-right>li>a,
+.nav-top-right>li>a{
+    text-decoration: none;
+    color:#7e7f84;
+}
+/* regole bottom right */
+.square-plus{
+    width: 100px;
+    height: 100px;
+    background-color: white
+}
 
 
 
@@ -74,7 +102,7 @@ section.side-bar-right > .pop-up{
     position: relative;
     z-index: 100;
 }
-.bottom{
+.button{
     border: 1px solid white;
     border-radius: 20px;
     z-index: 150;
