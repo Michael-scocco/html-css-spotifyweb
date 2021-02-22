@@ -29,12 +29,13 @@ section.side-bar-left{
 .nav-left{
     display: flex;
 }
-.nav-top-right-link{
+.nav-top-right{
     flex-direction: column;
     justify-content: flex-start;
 }
-
-
+.nav-top-right-link>a{
+    display: inline-block;
+}
 
 
 
