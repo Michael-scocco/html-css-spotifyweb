@@ -16,12 +16,11 @@ p{
 
 main{
     height: calc(100vh - 100px);
-    width: calc(100vw - 250px);
     display: flex;
 }
 /* sto scrollando solo il mio contenuto */
 section.scroll{
-    overflow: scroll;
+    overflow: auto;
 }
 /* INIZIO REGOLE LATO SINISTRO */
 section.side-bar-left{
@@ -34,7 +33,6 @@ section.side-bar-left{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: calc()
 }
 
 /* regole logo */
@@ -72,7 +70,8 @@ section.side-bar-left{
     margin: 20px 0;
 }
 .nav-bottom-right>li>a,
-.nav-top-right>li>a{
+.nav-top-right>li>a,
+.download-install-app>li>a{
     text-decoration: none;
     color:#7e7f84;
 }
@@ -80,8 +79,8 @@ section.side-bar-left{
 del quadrato più */
 .square-plus{
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     background-color: white;
     position: relative;
     vertical-align: middle;
@@ -93,27 +92,79 @@ del quadrato più */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
 }
 .square-write{
     font-size: 20px;
     font-weight: 800;
 }
-
-/* regole installa app*/
-.donwload-install-app{
-    height: 300px;
+.container-bottom{
+    height: 200px;
 }
-.install-app{
+.container-top{
+    height: calc(100vh - 200px);
+}
+
+/* regole download & installa app*/
+.link-download{
+    border-bottom: 3px solid #7e7f84;
+    width: 150%;
+}
+.download{
     width: 30px;
     height: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
 }
+img.image-download{
+    width: 70%;
+    height: 50px;
+    vertical-align: middle;
+}
+/* regole profile */
+
+.profile{
+    width:40px;
+    height: 40px;
+    display: inline-block;
+}
+.image-profile{
+    width: 95%;
+    height: 35px;
+    background-color: #808080;
+    border-radius: 50%;
+}
+img.image-profile{
+    vertical-align:middle;
+}
+.name-profile{
+    color: white;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* INIZIO REGOLE LATO DESTRO */
 section.side-bar-right{
     padding-top: 100px;
-    width: 100%;
+    width: calc(100vw - 250px);
     align-items: stretch;
 }
 section.side-bar-right > .pop-up{
@@ -205,7 +256,7 @@ footer{
     height: 100px;
     width:100%;
     background-color: #282828;
-    z-index: 200px;
+    z-index: 200;
 }
 
 .prova{
