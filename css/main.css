@@ -19,7 +19,7 @@ main{
     display: flex;
 }
 /* sto scrollando solo il mio contenuto */
-section.scroll{
+.scroll{
     overflow: auto;
 }
 /* INIZIO REGOLE LATO SINISTRO */
@@ -33,7 +33,7 @@ section.side-bar-left{
     padding: 0 25px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    height: 100%;
 }
 
 /* regole logo */
@@ -60,11 +60,6 @@ section.side-bar-left{
     height: 50px;
     vertical-align: middle;
 }
-/* regole titolo */
-.nav-bottom-right>h3{
-    color: white;
-}
-
 /* regole degli li */
 .nav-bottom-right>li,
 .nav-top-right>li{
@@ -75,6 +70,14 @@ section.side-bar-left{
 .download-install-app>li>a{
     text-decoration: none;
     color:#7e7f84;
+}
+/* regole container */
+.container-playlist{
+    flex: 1 0 auto;
+}
+/* regole titolo */
+.container-playlist>h3{
+    color: white;
 }
 /* regole bottom right
 del quadrato più */
@@ -100,17 +103,10 @@ del quadrato più */
     font-size: 20px;
     font-weight: 800;
 }
-.container-bottom{
-    height: 200px;
-}
-.container-playlist{
-    height: 100%;
-}
-
 /* regole download & installa app*/
 .link-download{
     border-bottom: 3px solid #7e7f84;
-    width: 150%;
+    width: 100%;
 }
 .download{
     width: 30px;
@@ -145,32 +141,16 @@ img.image-profile{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* INIZIO REGOLE LATO DESTRO */
-section.side-bar-right{
+/* INIZIO REGOLE LATO DESTRO __________________________________________________*/
+div.container-side-bar-right{
     padding-top: 100px;
     width: calc(100vw - 250px);
     align-items: stretch;
 }
-section.side-bar-right > .pop-up{
+div.container-side-bar-right > .pop-up{
      align-self:flex-end;
 }
+/* regole EFFETTUA L'UPGRADE */
 .pop-up{
       height: 100px;
       background-color: #080b12;
@@ -197,7 +177,7 @@ section.side-bar-right > .pop-up{
     text-decoration: none;
     padding: 10px 15px;
 }
-
+/* regole nav centrale */
 .nav-centre{
     display:flex;
     justify-content:center;
@@ -214,6 +194,12 @@ section.side-bar-right > .pop-up{
     color:#7e7f84;
 }
 
+/* REGOLE CENTRATURA */
+
+/* REGOLE RECENTLY PLAYED */
+.title-font-size{
+    font-size: 25px;
+}
 
 
 
@@ -223,45 +209,86 @@ section.side-bar-right > .pop-up{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* regole FOOTER */
 footer{
     height: 100px;
     width:100%;
     background-color: #282828;
     z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+.sinister{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.sinister>img{
+    width: 100%;
+}
+.fa-heart{
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.white-color{
+    color: white;
+}
+.gray-color{
+    color: #7e7e7e;
+}
+/* regole TEMPO barra */
+.link-footer-center{
+    display: flex;
+    align-items: center;
+}
+.link-footer-center>li{
+    margin-left: 20px;
+}
+.fa-play-circle{
+    font-size: 45px;
 }
 
-.prova{
-    height: 50px;
-    width: 50%;
-    background-color: red;
+/* regole BARRA volume */
+.footer-right{
+    display: flex;
 }
+.footer-right>li{
+    margin-right: 20px;
+}
+/* regole contenitore centrale */
+
+/* .slidecontainer{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+NON SO COME FUNZIONA
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+} */
