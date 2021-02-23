@@ -24,6 +24,7 @@ section.scroll{
 }
 /* INIZIO REGOLE LATO SINISTRO */
 section.side-bar-left{
+    overflow: hidden;
     width: 250px;
     background-color: black;
     height: 100%;
@@ -102,8 +103,8 @@ del quadrato più */
 .container-bottom{
     height: 200px;
 }
-.container-top{
-    height: calc(100vh - 200px);
+.container-playlist{
+    height: 100%;
 }
 
 /* regole download & installa app*/
