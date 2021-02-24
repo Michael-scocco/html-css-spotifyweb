@@ -202,8 +202,7 @@ div.container-side-bar-right > .pop-up{
 .disposition{
     display: flex;
     /* justify-content: space-around; */
-    width: calc(calc(100% - 100px) / 6);
-    margin-right: 20px;
+    width: calc(calc(100% - 120px)/ 6)
 }
 .title-font-size{
     font-size: 35px;
@@ -219,9 +218,9 @@ span.block{
 .container-images{
     width: 200px;
 }
-/* li.container-images{
+li.link-music{
     margin-right: 20px;
-} */
+}
 .container-images>img{
     width: 100%;
 }
