@@ -195,13 +195,36 @@ div.container-side-bar-right > .pop-up{
 }
 
 /* REGOLE CENTRATURA */
-
-/* REGOLE RECENTLY PLAYED */
-.title-font-size{
-    font-size: 25px;
+.centering{
+    padding: 0 20px 50px 20px;
 }
-
-
+/* REGOLE RECENTLY PLAYED */
+.disposition{
+    display: flex;
+    /* justify-content: space-around; */
+    width: calc(calc(100% - 100px) / 6);
+    margin-right: 20px;
+}
+.title-font-size{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+a.text-center{
+    text-align: center;
+    text-decoration: none;
+}
+span.block{
+    display: block;
+}
+.container-images{
+    width: 200px;
+}
+/* li.container-images{
+    margin-right: 20px;
+} */
+.container-images>img{
+    width: 100%;
+}
 
 
 
@@ -231,6 +254,9 @@ footer{
 }
 .sinister>img{
     width: 100%;
+}
+.footer-title-description>a{
+    text-decoration: none;
 }
 .fa-heart{
     margin-left: 50px;
