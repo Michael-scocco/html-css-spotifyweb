@@ -76,7 +76,7 @@ li.nav-top-right-link,
 }
 .nav-bottom-right>li>a,
 .nav-top-right>li>a,
-.container-bottom-download>a{
+.link-download>a{
     text-decoration: none;
     color:#7e7f84;
 }
@@ -115,22 +115,23 @@ del quadrato più */
     font-weight: 800;
 }
 /* regole download & installa app*/
-.download{
+.link-download{
     border-bottom: 3px solid #7e7f84;
     width: 100%;
-    display: inline-block;
 }
-.container-bottom-download{
+.download{
     width: 30px;
     height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: inline-block;
 }
-
 img.image-download{
     width: 70%;
     height: 50px;
     vertical-align: middle;
+}
+.download-install-app{
+    margin-bottom: 20px;
 }
 /* regole profile */
 
@@ -154,9 +155,24 @@ img.image-profile{
 }
 
 /* REGOLE HOVER BIANCO __________________________________________________________*/
-/* .nav-top-right-link:hover,
-.link-bottom-right:hover,
- */
+.nav-top-right-link:hover a{
+    color: white;
+    /* filter: none; */
+}
+img.white-hover:hover{
+    filter: none;
+}
+
+.link-bottom-right:hover a{
+    color: white;
+}
+.square-plus:hover{
+    background-color: white
+}
+.link-download:hover a{
+    color: white;
+}
+
 
 /* INIZIO REGOLE LATO DESTRO __________________________________________________*/
 div.container-side-bar-right{
@@ -230,8 +246,7 @@ div.container-side-bar-right > .pop-up{
 /* REGOLE RECENTLY PLAYED ___________________________________________________*/
 ul.disposition{
     display: flex;
-    /* justify-content: space-around; */
-    width: calc((100% - 120px)/ 6)
+    flex-wrap: wrap;
 }
 .title-font-size{
     font-size: 35px;
@@ -245,10 +260,11 @@ span.block{
     display: block;
 }
 .container-images{
-    width: 200px;
+    width: 100%;
 }
 li.link-music{
     margin-right: 20px;
+    width: calc((100% / 6) - 20px)
 }
 .container-images>img{
     width: 100%;
@@ -284,6 +300,7 @@ footer{
     align-items: center;
     padding: 0 20px;
 }
+/* regole footer left */
 .footer-left{
     display: flex;
     align-items: center;
@@ -299,6 +316,7 @@ footer{
 .footer-title-description>a{
     text-decoration: none;
 }
+/* regole figure  footer left*/
 .fa-heart{
     margin-left: 50px;
     margin-right: 10px;
@@ -309,16 +327,29 @@ footer{
 .gray-color{
     color: #7e7e7e;
 }
+/* regola hover footer left*/
+.footer-title-description:hover a>span{
+    text-decoration: underline;
+    color:white;
+}
+.fa-heart:hover,
+.fa-folder:hover{
+    color:white;
+}
+
 /* regole TEMPO barra */
 .link-footer-center{
     display: flex;
     align-items: center;
 }
 .link-footer-center>li{
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .fa-play-circle{
     font-size: 45px;
+}
+.fa-play-circle:hover{
+    transform: scale(1.3);
 }
 
 /* regole BARRA volume */
