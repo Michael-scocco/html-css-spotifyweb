@@ -30,7 +30,6 @@ section.side-bar-left{
     height: 100%;
 }
 .nav-left{
-    padding: 0 25px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -47,11 +46,20 @@ section.side-bar-left{
     margin-top: 30px;
 }
 /* regole della home */
-
+li.nav-top-right-link,
+.container-playlist,
+.container-bottom,
+.nav-logo-top-right{
+    padding: 0 25px;
+}
 .nav-top-right-link>a>.image-top-right,
 .nav-top-right-link>a>span {
     display: inline-block;
 }
+.border-sidebar{
+    border-left: 5px solid #bffb5b;
+}
+
 .image-top-right{
     width: 20%;
 }
@@ -59,6 +67,7 @@ section.side-bar-left{
     width: 100%;
     height: 50px;
     vertical-align: middle;
+    filter: contrast(0.5);
 }
 /* regole degli li */
 .nav-bottom-right>li,
@@ -67,7 +76,7 @@ section.side-bar-left{
 }
 .nav-bottom-right>li>a,
 .nav-top-right>li>a,
-.download-install-app>li>a{
+.container-bottom-download>a{
     text-decoration: none;
     color:#7e7f84;
 }
@@ -89,6 +98,7 @@ del quadrato più */
     position: relative;
     vertical-align: middle;
     margin-right: 10px;
+    background-color:#7e7f84;
 }
 .square-plus::before{
     content: "+";
@@ -97,23 +107,26 @@ del quadrato più */
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
+    color: black;
 }
 .square-write{
     font-size: 20px;
     font-weight: 800;
 }
 /* regole download & installa app*/
-.link-download{
+.download{
     border-bottom: 3px solid #7e7f84;
     width: 100%;
+    display: inline-block;
 }
-.download{
+.container-bottom-download{
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
     display: inline-block;
 }
+
 img.image-download{
     width: 70%;
     height: 50px;
@@ -140,6 +153,10 @@ img.image-profile{
     font-weight: 800;
 }
 
+/* REGOLE HOVER BIANCO __________________________________________________________*/
+/* .nav-top-right-link:hover,
+.link-bottom-right:hover,
+ */
 
 /* INIZIO REGOLE LATO DESTRO __________________________________________________*/
 div.container-side-bar-right{
@@ -177,32 +194,44 @@ div.container-side-bar-right > .pop-up{
     text-decoration: none;
     padding: 10px 15px;
 }
+.button:hover{
+    transform: scale(1.2);
+}
 /* regole nav centrale */
 .nav-centre{
     display:flex;
     justify-content:center;
 }
-.nav-centre-link{
+.container-nav-centre{
     display: flex;
     padding: 50px;
 }
-.nav-centre-link>li{
+.container-nav-centre>li{
     margin-left: 20px;
 }
-.nav-centre-link>li>a{
+.container-nav-centre>li>a{
     text-decoration: none;
     color:#7e7f84;
 }
+/* regole hover & border verde */
+.nav-centre-link:hover{
+    color:white;
+}
+.border-link-top{
+    border-bottom: 2px solid #bffb5b;
+    margin: 0px 33%;
+    padding: 2px 0;
+}
 
-/* REGOLE CENTRATURA */
+/* REGOLE CENTRATURA ________________________________________________________*/
 .centering{
     padding: 0 20px 50px 20px;
 }
-/* REGOLE RECENTLY PLAYED */
-.disposition{
+/* REGOLE RECENTLY PLAYED ___________________________________________________*/
+ul.disposition{
     display: flex;
     /* justify-content: space-around; */
-    width: calc(calc(100% - 120px)/ 6)
+    width: calc((100% - 120px)/ 6)
 }
 .title-font-size{
     font-size: 35px;
@@ -224,6 +253,15 @@ li.link-music{
 .container-images>img{
     width: 100%;
 }
+/* SESSIONE CREATO PER JOHN DOE ______________________________________________________*/
+div.title-center-music>.title-font-size{
+    margin-bottom: 10px;
+}
+div.title-center-music>span.block{
+    margin-bottom: 40px;
+}
+
+/* SESSIONE ARTISTI PIU' POPOLARI ________________________________________________________ */
 
 
 
@@ -231,7 +269,11 @@ li.link-music{
 
 
 
-/* regole FOOTER */
+
+
+
+
+/* regole FOOTER _____________________________________________________________*/
 footer{
     height: 100px;
     width:100%;
