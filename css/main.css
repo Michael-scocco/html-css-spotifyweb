@@ -171,14 +171,13 @@ img.image-profile{
     color: white;
     /* filter: none; */
 }
-img.white-hover:hover{
+.nav-top-right-link:hover img{
     filter: none;
 }
-
 .link-bottom-right:hover a{
     color: white;
 }
-.square-plus:hover{
+.link-bottom-right:hover span.square-plus{
     background-color: white
 }
 .link-download:hover a{
@@ -329,7 +328,7 @@ div.layover{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
     width: 100%;
-    height: 100%;
+    height: 97.5%;
     display: none;
 }
 .link-music:hover .layover{
@@ -343,7 +342,7 @@ div.layover-2{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
     width: 100%;
-    height: 100%;
+    height: 98%;
     border-radius: 50%;
     display: none;
 }
@@ -432,11 +431,33 @@ footer{
     transform: scale(1.3);
 }
 /* CONTENITORI BARRA__________________________________________________________________________ */
+.bar-time{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.star-time,
+.slide-container,
+.end-time{
+    align-self:center;
+}
+.star-time,
+.end-time{
+    color: white;
+    font-size: 10px;
+}
+.star-time{
+    margin-right: 10px;
+}
+.end-time{
+    margin-left: 10px;
+}
 .slide-container{
     width: 50%;
     height: 5px;
     border-radius: 10px;
     background-color: #606060;
+    justify-content: center;
 }
 .slider{
     position: relative;
