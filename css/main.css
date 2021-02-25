@@ -45,11 +45,23 @@ section.side-bar-left{
     height: auto;
     margin-top: 30px;
 }
+                /* LOGO SMALL__________________________________ */
+.nav-logo-small-top-right{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.nav-logo-small-top-right>img{
+    width: 20%;
+    height: auto;
+    margin-top: 30px;
+}
 /* regole della home */
 li.nav-top-right-link,
 .container-playlist,
 .container-bottom,
-.nav-logo-top-right{
+.nav-logo-top-right,
+.nav-logo-small-top-right{
     padding: 0 25px;
 }
 .nav-top-right-link>a>.image-top-right,
@@ -137,12 +149,11 @@ img.image-download{
 
 .profile{
     width:40px;
-    height: 40px;
     display: inline-block;
 }
 .image-profile{
-    width: 95%;
-    height: 35px;
+    width: 100%;
+    height: auto;
     background-color: #808080;
     border-radius: 50%;
 }
@@ -195,12 +206,13 @@ div.container-side-bar-right > .pop-up{
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      z-index: 700;
 }
 .pop-up>a{
     color: white;
     margin-right: 30px;
     position: relative;
-    z-index: 100;
+    z-index: 700;
 }
 .button{
     border: 1px solid white;
@@ -213,21 +225,29 @@ div.container-side-bar-right > .pop-up{
 .button:hover{
     transform: scale(1.2);
 }
-/* regole nav centrale */
+/* regole nav centrale _______________________________________________________*/
 .nav-centre{
     display:flex;
     justify-content:center;
 }
 .container-nav-centre{
     display: flex;
-    padding: 50px;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding: 50px 0;
 }
 .container-nav-centre>li{
-    margin-left: 20px;
+    margin-right: 20px;
+    /* flex: 1 0 auto; */
+    /* width: calc(100% / 6) */
+}
+.container-nav-centre>li:last-child{
+    margin-right:0px;
 }
 .container-nav-centre>li>a{
     text-decoration: none;
     color:#7e7f84;
+
 }
 /* regole hover & border verde */
 .nav-centre-link:hover{
@@ -277,24 +297,42 @@ div.title-center-music>span.block{
     margin-bottom: 40px;
 }
 
-/* SESSIONE ARTISTI PIU' POPOLARI ________________________________________________________ */
+/* regole hover immagini ________________________________________________________ */
 
-
-
-
-
-
-
-
-
-
+.container-images{
+    position: relative;
+}
+.center-circle{
+    display: none;
+}
+div.layover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.link-music:hover .layover{
+    display: block;
+}
+.link-music:hover .center-circle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: block;
+}
 
 /* regole FOOTER _____________________________________________________________*/
 footer{
     height: 100px;
     width:100%;
     background-color: #282828;
-    z-index: 200;
+    z-index: 900;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -306,7 +344,6 @@ footer{
     align-items: center;
 }
 .sinister{
-    height: 50px;
     width: 50px;
     margin-right: 10px;
 }
@@ -338,12 +375,22 @@ footer{
 }
 
 /* regole TEMPO barra */
+.container-footer-center{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .link-footer-center{
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 .link-footer-center>li{
-    margin-left: 40px;
+    margin-left: 25px;
+}
+.link-footer-center>li:first-child{
+    margin-left: 0;
 }
 .fa-play-circle{
     font-size: 45px;
@@ -351,6 +398,47 @@ footer{
 .fa-play-circle:hover{
     transform: scale(1.3);
 }
+/* CONTENITORI BARRA__________________________________________________________________________ */
+.slide-container{
+    width: 50%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #606060;
+}
+.slider{
+    position: relative;
+    width: 35%;
+    background-color: #c3c2c2;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.pointer-round{
+    position:absolute;
+    left: 95%;
+    bottom: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: none;
+}
+.slide-container:hover .pointer-round,
+.slide-container-right:hover .pointer-round{
+    display: block;
+}
+.slide-container:hover .slider,
+.slide-container-right:hover .slider{
+    background-color: #b6f665;
+}
+/* regole barra volume______________________________________________________________________ */
+.slide-container-right{
+    width: 8%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #606060;
+}
+
 
 /* regole BARRA volume */
 .footer-right{
@@ -360,33 +448,3 @@ footer{
     margin-right: 20px;
 }
 /* regole contenitore centrale */
-
-/* .slidecontainer{
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-NON SO COME FUNZIONA
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-} */

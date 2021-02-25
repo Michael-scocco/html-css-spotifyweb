@@ -1,33 +1,184 @@
-@media all and (max-width:767px){
+@media all and (max-width:552px){
 
-/* ______FORMATO DEL MOBILE_____ */
-            /* HEADER */
+/* ______FORMATO DEL MOBILE GRANDE_____ */
+            /*SESSIONE SPOTIFY LATO SINISTRO */
+            .nav-top-right>li>a>span,
+            .container-playlist>h3,
+            .nav-bottom-right,
+            .download-install-app>.link-download>a>span,
+            .link-profile>span{
+                display: none;
+            }
+            .link-download,
+            .border-sidebar{
+                border: none;
+            }
+            .nav-logo-top-right{
+                display: none;
+            }
+            .nav-logo-small-top-right{
+                display: block;
+            }
+            .nav-logo-small-top-right>img{
+                width: 100%
+            }
+            section.side-bar-left{
+                width: 70px;
+            }
+            div.container-side-bar-right{
+                width: calc(100vw - 70px);
+            }
+            .image-top-right{
+                width: 100%;
+            }
+            .image-top-right>img{
+                width: 100%;
+            }
+            .profile{
+                margin-bottom: 10px;
+                width: 100%
+            }
+            .download {
+                width: 30px;
+                height: 30px;
+                margin-bottom: 0;
+            }
+            img.image-download {
+                width: 70%;
+                height: 50px;
+            }
+            .pop-up{
+                left: 70px;
+            }
+
+
 }
 
 
-@media all and (min-width:768px) and (max-width:991px){
+
+@media all and (min-width:553px) and (max-width:639px){
+
+/* ______FORMATO DEL MOBILE GRANDE_____ */
+            /*SESSIONE SPOTIFY LATO SINISTRO */
+}
+
+
+@media all and (min-width:640px) and (max-width:878px){
 
 /* ______FORMATO DEL TABLET_____ */
-            /* HEADER */
+            /* SESSIONE SPOTIFY LATO SINISTRO */
 
 }
 
 
 
 
+/* _______________________INIZIO MEDIA QUERY DI DESTRA_________________  */
+
+
+@media all and (max-width:552px){
+
+/* ______FORMATO DEL MOBILE GRANDE_____ */
+            /*SESSIONE SPOTIFY LATO DESTRO */
+            li.link-music{
+                margin-right: 20px;
+                width: calc((100% / 2) - 20px)
+            }
+}
 
 
 
-@media all and (max-width:767px){
+@media all and (min-width:553px) and (max-width:700px){
 
-/* ______FORMATO DEL MOBILE_____ */
-            /* section JUMBOTRON */
+/* ______FORMATO DEL MOBILE GRANDE_____ */
+            /* SESSIONE SPOTIFY LATO DESTRO */
+            li.link-music{
+                margin-right: 20px;
+                width: calc((100% / 2) - 20px)
+            }
 
 }
 
-@media all and (min-width:768px) and (max-width:991px){
+
+@media all and (min-width:701px) and (max-width:878px){
 
 /* ______FORMATO DEL TABLET_____ */
-            /* section JUMBOTRON*/
+            /* SESSIONE SPOTIFY LATO DESTRO */
+
+            li.link-music{
+                margin-right: 20px;
+                width: calc((100% / 4) - 20px)
+            }
+
+}
+
+
+
+
+
+
+
+/* _______________________INIZIO MEDIA QUERY FOOTER_________________  */
+
+
+@media all and (max-width:552px){
+
+/* ______FORMATO DEL MOBILE GRANDE_____ */
+            /*SESSIONE SPOTIFY FOOTER */
+            .footer-title-description{
+                width: 60%;
+            }
+            .footer-title-description>a>span{
+                font-size: 8px;
+            }
+            .fa-heart{
+                margin-left: 0;
+            }
+
+}
+
+
+
+@media all and (min-width:553px) and (max-width:700px){
+
+/* ______FORMATO DEL MOBILE GRANDE_____ */
+            /* SESSIONE SPOTIFY FOOTER */
+            .footer-title-description{
+                width: 60%;
+            }
+            .footer-title-description>a>span{
+                font-size: 8px;
+            }
+            .fa-heart{
+                margin-left: 0;
+            }
+            .container-figures{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 25px;
+                margin-right: 20px;
+            }
+            .fa-heart{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+}
+
+
+@media all and (min-width:701px) and (max-width:878px){
+
+/* ______FORMATO DEL TABLET_____ */
+            /* SESSIONE SPOTIFY FOOTER */
+            .container-figures{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 25px;
+            }
+            .fa-heart{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
 
 }
