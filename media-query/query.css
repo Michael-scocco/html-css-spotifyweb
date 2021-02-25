@@ -167,7 +167,6 @@
             }
 }
 
-
 @media all and (min-width:701px) and (max-width:878px){
 
 /* ______FORMATO DEL TABLET_____ */
@@ -185,4 +184,13 @@
                 margin-right: 0px;
             }
 
+}
+
+/* ______________________________MEDIA QUERY VERTICALE_______________________________ */
+
+@media all and (min-height:400px) and (max-height:860px){
+
+    .nav-bottom-right{
+        overflow: scroll;
+    }
 }
