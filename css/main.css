@@ -9,6 +9,7 @@ ul{
 }
 body{
     background-color: #151921;
+    font-family: "Montserrat";
 }
 p{
     color: white;
@@ -45,7 +46,7 @@ section.side-bar-left{
     height: auto;
     margin-top: 30px;
 }
-                /* LOGO SMALL__________________________________ */
+                /* LOGO SMALL_________________________________________________ */
 .nav-logo-small-top-right{
     width: 100%;
     height: auto;
@@ -269,7 +270,7 @@ ul.disposition{
     flex-wrap: wrap;
 }
 .title-font-size{
-    font-size: 35px;
+    font-size: 18px;
     margin-bottom: 50px;
 }
 a.text-center{
@@ -286,17 +287,32 @@ li.link-music{
     margin-right: 20px;
     width: calc((100% / 6) - 20px)
 }
+/* regole generali per distanziamento basso e font ai titoli e span */
 .container-images>img{
     width: 100%;
+    /* margin-bottom: 10px; */
+}
+.link-music>a>h5{
+    margin:10px 0;
+
+}
+.link-music>a>span{
+    font-size: 10px;
+}
+div.title-center-music>span{
+    font-size: 10px;
 }
 /* SESSIONE CREATO PER JOHN DOE ______________________________________________________*/
 div.title-center-music>.title-font-size{
     margin-bottom: 10px;
 }
 div.title-center-music>span.block{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
-
+/* SESSIONE ARTISTI POPOLARI ______________________________________________________*/
+.round-image>img{
+    border-radius: 50%;
+}
 /* regole hover immagini ________________________________________________________ */
 
 .container-images{
@@ -305,6 +321,7 @@ div.title-center-music>span.block{
 .center-circle{
     display: none;
 }
+/* regole layover QUADRATO____________________________________________________________ */
 div.layover{
     position: absolute;
     top: 0;
@@ -318,6 +335,22 @@ div.layover{
 .link-music:hover .layover{
     display: block;
 }
+/* regole layover ROTONDO____________________________________________________________ */
+div.layover-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: none;
+}
+.link-music:hover .layover-2{
+    display: block;
+}
+/* regole dove deve iniziare le regole del layover */
 .link-music:hover .center-circle{
     position: absolute;
     left: 50%;

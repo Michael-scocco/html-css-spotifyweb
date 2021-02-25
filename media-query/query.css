@@ -1,7 +1,9 @@
 @media all and (max-width:552px){
 
 /* ______FORMATO DEL MOBILE GRANDE_____ */
+
             /*SESSIONE SPOTIFY LATO SINISTRO */
+
             .nav-top-right>li>a>span,
             .container-playlist>h3,
             .nav-bottom-right,
@@ -50,36 +52,38 @@
             .pop-up{
                 left: 70px;
             }
-
-
 }
-
-
 
 @media all and (min-width:553px) and (max-width:639px){
 
 /* ______FORMATO DEL MOBILE GRANDE_____ */
+
             /*SESSIONE SPOTIFY LATO SINISTRO */
+
 }
 
 
 @media all and (min-width:640px) and (max-width:878px){
 
 /* ______FORMATO DEL TABLET_____ */
+
             /* SESSIONE SPOTIFY LATO SINISTRO */
+
 
 }
 
 
 
 
-/* _______________________INIZIO MEDIA QUERY DI DESTRA_________________  */
+/* _______________________INIZIO MEDIA QUERY DI DESTRA___________________________ */
 
 
 @media all and (max-width:552px){
 
-/* ______FORMATO DEL MOBILE GRANDE_____ */
+/* ______FORMATO DEL TELEFONO_____ */
+
             /*SESSIONE SPOTIFY LATO DESTRO */
+
             li.link-music{
                 margin-right: 20px;
                 width: calc((100% / 2) - 20px)
@@ -90,7 +94,7 @@
 
 @media all and (min-width:553px) and (max-width:700px){
 
-/* ______FORMATO DEL MOBILE GRANDE_____ */
+/* ______FORMATO DEL TELEFONO GRANDE_____ */
             /* SESSIONE SPOTIFY LATO DESTRO */
             li.link-music{
                 margin-right: 20px;
@@ -114,17 +118,15 @@
 
 
 
-
-
-
-
-/* _______________________INIZIO MEDIA QUERY FOOTER_________________  */
+/* _______________________INIZIO MEDIA QUERY FOOTER_____________________________  */
 
 
 @media all and (max-width:552px){
 
-/* ______FORMATO DEL MOBILE GRANDE_____ */
+/* ______FORMATO DEL TELEFONO_____ */
+
             /*SESSIONE SPOTIFY FOOTER */
+
             .footer-title-description{
                 width: 60%;
             }
@@ -137,12 +139,12 @@
 
 }
 
-
-
 @media all and (min-width:553px) and (max-width:700px){
 
-/* ______FORMATO DEL MOBILE GRANDE_____ */
+/* ______FORMATO DEL TELEFONO GRANDE_____ */
+
             /* SESSIONE SPOTIFY FOOTER */
+
             .footer-title-description{
                 width: 60%;
             }
@@ -169,7 +171,9 @@
 @media all and (min-width:701px) and (max-width:878px){
 
 /* ______FORMATO DEL TABLET_____ */
+
             /* SESSIONE SPOTIFY FOOTER */
+
             .container-figures{
                 display: flex;
                 flex-direction: column;
