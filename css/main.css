@@ -488,7 +488,7 @@ footer{
 }
 /* regole barra volume______________________________________________________________________ */
 .slide-container-right{
-    width: 8%;
+    width: 100px;
     height: 5px;
     border-radius: 10px;
     background-color: #606060;
