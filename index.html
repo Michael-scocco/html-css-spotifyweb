@@ -147,8 +147,12 @@
                                                     <!-- SESSIONE RECENTLY PLAYED -->
                 <section class="top-music centering">
 
-                    <div class="title-top-music">
-                        <h2 class="white-color title-font-size">Recently played</h2>
+                    <div class="title-top-music ">
+                        <h2 id="title-js" class="white-color">Recently played</h2>
+                        <script>
+                            document.writeln('<h2>recentemente sentito</h2>');
+                            document.getElementById('title-js').innerHTML = 'Riascolta i tuoi preferiti';
+                        </script>
                     </div>
 
                     <ul class="disposition">
@@ -431,5 +435,8 @@
                 </div>
 
         </footer>
+        <script>
+
+        </script>
     </body>
 </html>

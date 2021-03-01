@@ -59,9 +59,7 @@
 /* ______FORMATO DEL MOBILE GRANDE_____ */
 
             /*SESSIONE SPOTIFY LATO SINISTRO */
-
 }
-
 
 @media all and (min-width:640px) and (max-width:878px){
 
@@ -69,11 +67,7 @@
 
             /* SESSIONE SPOTIFY LATO SINISTRO */
 
-
 }
-
-
-
 
 /* _______________________INIZIO MEDIA QUERY DI DESTRA___________________________ */
 
@@ -90,8 +84,6 @@
             }
 }
 
-
-
 @media all and (min-width:553px) and (max-width:700px){
 
 /* ______FORMATO DEL TELEFONO GRANDE_____ */
@@ -102,7 +94,6 @@
             }
 
 }
-
 
 @media all and (min-width:701px) and (max-width:878px){
 
@@ -115,9 +106,6 @@
             }
 
 }
-
-
-
 /* _______________________INIZIO MEDIA QUERY FOOTER_____________________________  */
 
 
@@ -136,7 +124,6 @@
             .fa-heart{
                 margin-left: 0;
             }
-
 }
 
 @media all and (min-width:553px) and (max-width:700px){

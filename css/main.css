@@ -264,6 +264,13 @@ div.container-side-bar-right > .pop-up{
     padding: 0 20px 50px 20px;
 }
 /* REGOLE RECENTLY PLAYED ___________________________________________________*/
+.title-top-music{
+    margin-bottom: 50px;
+    color: #bffb5b;
+}
+.title-top-music>h2{
+    font-size: 18px;
+}
 ul.disposition{
     display: flex;
     flex-wrap: wrap;
@@ -452,13 +459,7 @@ footer{
 .end-time{
     margin-left: 10px;
 }
-.slide-container{
-    width: 50%;
-    height: 5px;
-    border-radius: 10px;
-    background-color: #606060;
-    justify-content: center;
-}
+
 .slider{
     position: relative;
     width: 35%;
@@ -501,4 +502,3 @@ footer{
 .footer-right>li{
     margin-right: 20px;
 }
-/* regole contenitore centrale */
